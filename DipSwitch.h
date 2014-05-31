@@ -6,9 +6,10 @@
 class DipSwitch
 {
     public:
-        DipSwitch(int* pins);
+        DipSwitch(int number_of_pins, int* pins);
         int read();
     private:
+        int _number_of_pins;
         int* _pins;
 };
 
