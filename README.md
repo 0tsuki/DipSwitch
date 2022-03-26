@@ -8,7 +8,7 @@ This is a Arduino library for handling DIP Switch
 #include <DipSwitch.h>
 
 int dipSwitchPins[] = {11, 12, 13, 14};
-DipSwitch myDipSwitch(dipSwitchPins);
+DipSwitch myDipSwitch(4, dipSwitchPins);
 
 void seup() {
   Serial.begin(9600);
